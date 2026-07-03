@@ -1,5 +1,9 @@
 import helloWorldStyles from "./HelloWorld.module.css";
-export default function HelloWorld() {
+
+type HelloWorldProps = {
+  text?: string;
+};
+export default function HelloWorld({ text = "Hello" }: HelloWorldProps) {
   // return <h1>Hello World</h1>;
-  return <h1 className={helloWorldStyles.offline}>Hello World</h1>;
+  return <h1 className={helloWorldStyles.offline}>{true}</h1>;
 }

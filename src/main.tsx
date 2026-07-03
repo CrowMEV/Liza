@@ -6,6 +6,10 @@ import HelloWorld from "./HelloWord/HelloWorld.tsx";
 import UserProfile from "./UserProfile/UserProfile.tsx";
 // import { LikeButton } from "./LikeButton/LikeButton.tsx";
 import { PurchasesList } from "./Purchases/PurchasesList.tsx";
+import { PopUp } from "./Modal/Modal.tsx";
+import {
+  AccountRender,
+} from "./AccountHolder/AccountHolder.tsx";
 
 const user1 = {
   name: "Jenya",
@@ -24,11 +28,14 @@ const user2 = {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    {/* <HelloWorld /> */}
+    <AccountRender />
+    <HelloWorld />
     {/* <HelloWorld ></HelloWorld > */}
     {/* <UserProfile user={user1} />
     <UserProfile user={user2} /> */}
     {/* <LikeButton /> */}
-    <PurchasesList />,
+    {/* <PurchasesList />,
+    <PopUp /> */}
+    {/* <Modal text="Bye" danger /> */}
   </StrictMode>,
 );
