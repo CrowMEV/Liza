@@ -1,0 +1,6 @@
+.offline {
+  background-color: red;
+  color: var(--accent);
+  padding: 5px;
+  border-radius: 5px;
+}
